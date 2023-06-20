@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html land="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="./img/icon.jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="style.css">
+    <title>Variados</title>
+</head>
+
+<body>
+    <nav id="nav">
+        <div class="navTop">
+            <div class="navItem">
+                <h1>Andrômeda Store</h1>
+            </div>
+           <form class="text-center py-4">
+                    <input type="text" class="placeholder-gray-800 focus:outline-none bg-gray-200 text-gray-800 w-2/4 py-2 px-3 font-poppins rounded-md" id="filterInput" placeholder="Search...">
+           </form>
+			
+		</div>	
+		
+		 <div class="navBottom">
+       <label id="hamburger-menu">
+       <nav id='menu'>
+		<input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+			<ul>
+			<li><a class='dropdown-arrow' href='#'>Produtos</a>
+			<ul class='sub-menus'>
+		    <li><a id="id="filterInput" href='#product'>Men's Clothing</a></li>
+			<li><a id="fetch-image-button" href='#product'>Women's Clothing</a></li>
+			<li><a id="fetch-image-button" href='#product'>Jewelery</a></li>
+			<li><a id="fetch-image-button" href='#product'>Electronics</a></li>
+		</ul>
+		</li>
+		<li><a href='#'>Sobre</a></li>
+			<ul class='sub-menus'>
+			<li><a href='#product' id='firsts' >Sobre</a></li>
+		</ul>
+		</li>
+			<li><a href='#'>Contatos</a></li>
+		</ul>
+		</nav>
+		</label>
+
+<div class="overlay"></div>
+        </div>	
+			
+	</nav>		
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" onclick="slider('product1.png')" style="width:22%">
+  <div class="text">Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg" onclick="slider('product1.png')" style="width:22%">
+  <div class="text">Mens Casual Premium Slim Fit T-Shirts </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg" onclick="slider('product1.png')" style="width:28%">
+  <div class="text">Mens Cotton Jacket</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+   <img src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg" onclick="slider('product1.png')" style="width:25%">
+  <div class="text">Mens Casual Slim Fit</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg" onclick="slider('product1.png')" style="width:18%">
+  <div class="text">John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+    
+    <!-- product grid -->
+    <div class="products grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-12 gap-20" id="product">
+        <!-- <div class="item justify-self-center">
+            <img src="./assets/img3.png" class="bg-cover img" alt="img1">
+            <div class="text-center py-3 font-poppins">
+                <h1 class="text-lg title">Product Title</h1>
+                <a href="#" class="block"><span class="text-sm text-red-400">Category</span></a>
+                <span class="block py-3">$<span class="text-md">12.99</span></span>
+                <button class="border-2 px-8 py-1 bg-yellow-400 border rounded-md">Buy Now</button>
+            </div>
+        </div> -->
+    </div>
+
+  
+
+  <footer>
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Sobre nós</h1>
+                <ul class="fList">
+                    <li class="fListItem">Empresa</li>
+                    <li class="fListItem">Contatos</li>
+                    <li class="fListItem">Carreiras</li>
+                    <li class="fListItem">Lojas</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Links</h1>
+                <ul class="fList">
+                    <li class="fListItem">Ajuda</li>
+                    <li class="fListItem">Reembolso</li>
+                    <li class="fListItem">FAQ</li>
+                    <li class="fListItem">Feedback</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Produtos</h1>
+                <ul class="fList">
+                    <li class="fListItem">Men's Clothing</li>
+                    <li class="fListItem">Women's Clothing</li>
+                    <li class="fListItem">Jewelery</li>
+                    <li class="fListItem">Electronics</li>
+                </ul>
+            </div>
+      
+
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Andrômeda Santos de Moura</h1>
+                <ul class="fList">
+                    <li class="fListItem">Análise e Desenvolvimento de Sistemas</li>
+                    <li class="fListItem">819059</li>
+                </ul>
+            </div>
+        </div>	
+        </div>
+    </footer>
+<script src="./getSingleProduct.js"></script>
+</body>
+</html>		
